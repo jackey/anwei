@@ -1,5 +1,261 @@
-<div class="jumbotron text-center">
-	<h1>Home Page 4 Life</h1>
+<div id="content-body-main" ng-init="init()">
+	<div class="wrapper">
+		<div class="sound-icon-con" ng-click="soundOnOrOff($event)">
+			<b class="icon icon-sound" ng-class="soundOn ? '': 'icon-sound-off'"></b>
+			<b class="icon icon-question hideme"></b>
+		</div>
+	
+		<div class="section-container" auto-or-slide-to-next-section>
+			<div class="loading-content">
+				<img src="/misc/images/loading_icon.png" alt="">
+			</div>
+			<div class="section section-1">
+				<div class="img img-top" >
+					<div class="loader next-section-hot-click">
+						<canvas id="loader-1" width="28px;" height="28px;" create-loader-one ></canvas>
+					</div>
+					<img fade-out style="opacity: 0px;" src="/misc/images/s1main.png" alt="">
+				</div>
+				<div style="display:none;" class="words clearfix">
+					<div class="center clearfix">
+						<p class="p p4">赶了 <span style="display:inline-block;margin-left:2px;">1</span> 小时的山路上学</p>
+						<p class="p p3">他已经饿着肚子</p>
+						<p class="p p2">准备出门上班</p>
+						<p class="p p1">当你吃完丰盛的早餐</p>
+					</div>
+				</div>
+			</div>
+			<div class="section section-2">
+				<div class="img img-top" >
+					<img fade-out style="opacity: 0;" src="/misc/images/s2main.png" alt="">
+				</div>
+				<div style="display:none;" class="words clearfix" >
+					<div class="center clearfix">
+						<p class="p p3">值得拥有健康美好的未来</p>
+						<p class="p p2">但他<span style="font-size: 20px;display: inline-block; margin-left: -2px;">对知识的渴望</span></p>
+						<p class="p p1">虽然求学之路艰辛曲折</p>
+					</div>
+				</div>
+				<div class="img img-bottom">
+					<img fade-out style="opacity:0"  src="/misc/images/s2bimg.png" />
+				</div>
+			</div>
+			<div class="section section-3">
+				<div class="img img-top" >
+					<div class="loader next-section-hot-click">
+						<canvas id="loader-2" width="28px;" height="28px;" create-loader-two ></canvas>
+					</div>
+					<img fade-out style="opacity: 0;" src="/misc/images/s3main.png" alt="">
+				</div>
+				<div style="display:none;" class="words clearfix">
+					<div class="center clearfix">
+						<p class="p p3">当你还在丰盛餐桌前</p>
+						<p class="p p2">为挑食的孩子愁苦</p>
+						<p class="p p1">她正把家中<span style="font-size: 20px;display: inline-block; margin-left: -2px;">最好的口粮</span></p>
+						<p class="p p1">喂入嗷嗷待哺的孩子口中</p>
+					</div>
+				</div>
+			</div>
+			<div class="section section-4">
+				<div class="img img-top" >
+					<img fade-out style="opacity: 0;" src="/misc/images/s4main.png" alt="">
+				</div>
+				<div style="display:none;" class="words clearfix" >
+					<div class="center clearfix">
+						<p class="p p1">值得倾尽所有呵护陪伴</p>
+						<p class="p p2"><span style="font-size: 20px;display: inline-block; margin-top: -3px;">健康成长的期望</span></p>
+						<p class="p p3">但她对孩子</p>
+						<p class="p p4">虽然营养匮乏</p>
+						<p class="p p5">虽然生活困苦</p>
+					</div>
+				</div>
+				<div class="img img-bottom">
+					<img fade-out style="opacity:0"  src="/misc/images/s4bimg.png" />
+				</div>
+			</div>
+			<div class="section section-5">
+				<div class="img img-top" >
+					<div class="loader next-section-hot-click">
+						<canvas id="loader-3" width="28px;" height="28px;" create-loader-three ></canvas>
+					</div>
+					<img fade-out style="opacity: 0;" src="/misc/images/s5main.png" alt="">
+				</div>
+				<div style="display:none;" class="words clearfix">
+					<div class="center clearfix">
+						<p class="p p6">搭起避风的港湾</p>
+						<p class="p p5">为在外辛劳的儿女</p>
+						<p class="p p4"><span style="font-size: 20px;display: inline-block; margin-top: -3px;">为家守住一份温暖</span></p>
+						<p class="p p3">她在遥远的故乡</p>
+						<p class="p p2">享受度假的阳光美食</p>
+						<p class="p p1">当你正和父母其乐融融</p>
+					</div>
+				</div>
+			</div>
+			<div class="section section-6">
+				<div class="img img-top" >
+					<img fade-out style="opacity: 0;" src="/misc/images/s6main.png" alt="">
+				</div>
+				<div style="display:none;" class="words clearfix">
+					<div class="center clearfix">
+						<p class="p p3">当你正和父母其乐融融</p>
+						<p class="p p2">享受度假的阳光美食</p>
+						<p class="p p1">她在遥远的故乡</p>
+						<p class="p p4">为在外辛劳的儿女</p>
+						<p class="p p5">搭起避风的港湾</p>
+					</div>
+				</div>
+				<div class="img img-bottom">
+					<img fade-out style="opacity:0"  src="/misc/images/s6bimg.png" />
+				</div>
+			</div>
+			<div class="section section-bg2 section-7">
+				<div class="img img-top" >
+					<img fade-out style="opacity: 0;" src="/misc/images/s7main.png" alt="">
+				</div>
+				<div class="words clearfix" fade-out-two>
+					<div class="title-word">
+						<h4>百万安妈接力</h4>
+						<h3>给爱一份“安”味</h3>
+					</div>
+					<div class="body-word">
+						<span>给一杯牛奶，送一份营养</span>
+						<span>用你的点滴助力</span>
+						<span>为贫困中的爱与坚持带去</span>
+						<span>一份安味！</span>
+					</div>
+					<div class="text-center">
+						<button class="btn btn-for-love" id="btn-for-love">为爱动起来</button>
+					</div>
+					<div class="img img-bottom">
+						<img fade-out style="opacity: 0;" src="/misc/images/s7bimg.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="section section-bg2 section-8">
+				<div class="words-top">
+					<p class="p p1">送去一句鼓励的话语</p>
+					<p class="p p2">让她们得到更多的营养和安味</p>
+					<p class="p p3">您的每次转发都会为她们筹集</p>
+					<p class="p p4">1元基金</p>
+				</div>
+				<div class="choose-parts clearfix">
+					<div class="choose-part choose-part1" ng-click="selectThisPart(1, $event)" ng-class="selectedPart == 'part1' ? 'crtselect': '' ">
+						<p class="c-icon">孩子，你值得10分！</p>
+						<p class="selected">
+							<span class="yes"></span>
+						</p>
+					</div>
+					<div class="choose-part choose-part2" ng-click="selectThisPart(2, $event)" ng-class="selectedPart == 'part2' ? 'crtselect': '' ">
+						<p class="c-icon">宝贝，健康成长哦！</p>
+						<p class="selected">
+							<span class="yes"></span>
+						</p>
+					</div>
+					<div class="choose-part choose-part3" ng-click="selectThisPart(3, $event)" ng-class="selectedPart == 'part3' ? 'crtselect': '' ">
+						<p class="c-icon">阿婆，为你"骨"劲！</p>
+						<p class="selected">
+							<span class="yes"></span>
+						</p>
+					</div>
+					<div class="choose-part choose-part4" ng-click="selectThisPart(4, $event)" ng-class="selectedPart == 'part4' ? 'crtselect': '' ">
+						<p class="c-icon"><i class="icon-write"></i>自定义</p>
+						<p class="selected">
+							<span class="yes"></span>
+						</p>
+					</div>
+				</div>
+				<div class="text-center">
+					<button id="btn-for-choose" ng-click="sendAnwei()" class="btn btn-for-love btn-for-choose">确定并送出安味</button>
+				</div>
+				
+				<div class="share-me-popup hideme">
+					<div class="bg-modal"></div>
+					<div class="popup-container">
+						<div class="popup-content share-content">
+							<div class="wrapper-content">
+								<p class="pc1"><span style="display:inline-block;margin-left: 10px;">你的爱心“安味”</span><br> 已发送成功</p>
+								<i class="sl"></i>
+								<p class="pc2">点击右上角分享到朋友圈<br>邀请朋友们为他们送去<br>更多支持与鼓励</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-	<p>{{ tagline }}</p>
+				<div class="part4-popup hideme">
+					<div class="bg-modal"></div>
+					<div class="popup-container">
+						<div class="popup-content part4-content">
+							<div class="wrapper-content">
+								<i class="icon close-icon" ng-click="hidePart4Form()"></i>
+								<h3>写下鼓励的话</h3>
+								<textarea name="" id="" cols="30" rows="10" placeholder="20字以内哦..."></textarea>
+								<button ng-click="sendAnwei()" id="btn-for-send-anwei" class="btn btn-for-love btn-for-send-anwei">确定并送出安味</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section section-bg2 section-9">
+				<div class="img img-top">
+					<img src="/misc/images/s9main.png" alt="">
+				</div>
+				<div class="words-top">
+					<p class="p p1">现已汇聚<span>49113</span>份安味</p>
+					<p class="p p2">参与人数越多，贫困地区的妇女和儿童将得到更多营养更多安味！</p>
+				</div>
+				<div class="product-links clearfix">
+					<a class="pl3" href=""><img src="/misc/images/s9p3.png" alt=""></a>
+					<a class="pl1" href=""><img src="/misc/images/s9p1.png" alt=""></a>
+					<a class="pl2" href=""><img src="/misc/images/s9p2.png" alt=""></a>
+				</div>
+				<div class="words-bottom">
+					<p>与她们一起，享更多安味</p>
+				</div>
+			</div>
+			
+			<div class="section section-bg2 section-10">
+				<div class="img img-top">
+					<img src="/misc/images/s9main.png" alt="">
+				</div>
+				<div class="words-top">
+					<p class="p p1">现已汇聚<span>49113</span>份安味</p>
+					<p class="p p2">参与人数越多，贫困地区的妇女和儿童将得到更多营养更多安味！</p>
+				</div>
+				<div class="words-bottom">
+					<p>你的好友通过你的邀请<br>参与了活动：</p>
+					<div class="users">
+						<ul class="clearfix">
+							<li class="clearfix">
+								<i class="icon user-icon"></i>
+								<b>朋友成功送出一份安味</b>
+							</li>
+							<li class="clearfix">
+								<i class="icon user-icon"></i>
+								<b>朋友成功送出一份安味</b>
+							</li>
+							<li class="clearfix">
+								<i class="icon user-icon"></i>
+								<b>朋友成功送出一份安味</b>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<audio id="audio"  src="/misc/audio/music.mp3" style="visibility: hidden;" preload="true" autoplay="autoplay" loop="loop" />
 </div>
+
+<div id="img-preload"></div>
+
+	<script>
+		// wx.config({
+		// 	debug: true
+		// });
+
+		// wx.ready(function () {
+		// 	//$('#audio')[0].play();
+		// });
+	</script>
